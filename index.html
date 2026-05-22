@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Google Adsense Verification -->
-    <meta name="google-adsense-account" content="ca-pub-5963666797707136">
+    <!-- SEO -->
+    <meta name="description" content="Website artikel teknologi, tutorial, game, dan informasi menarik lainnya.">
+    <meta name="keywords" content="teknologi, tutorial, game, berita, website">
+    <meta name="robots" content="index, follow">
 
-    <title>Website Saya</title>
+    <!-- Google Adsense Verification -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5963666797707136"
+        crossorigin="anonymous">
+    </script>
+
+    <title>Addilalayeye - Home</title>
 
     <style>
         *{
@@ -18,41 +26,79 @@
         }
 
         body{
-            background:#0f172a;
+            background:#020d2b;
             color:white;
-            min-height:100vh;
+            line-height:1.6;
+        }
+
+        header{
+            background:#08153d;
+            padding:20px;
+            position:sticky;
+            top:0;
+        }
+
+        nav{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            max-width:1200px;
+            margin:auto;
+        }
+
+        nav h1{
+            color:#38bdf8;
+        }
+
+        nav ul{
+            display:flex;
+            gap:20px;
+            list-style:none;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#38bdf8;
+        }
+
+        .hero{
+            min-height:90vh;
             display:flex;
             justify-content:center;
             align-items:center;
             text-align:center;
-            padding:20px;
+            padding:40px 20px;
         }
 
-        .container{
-            max-width:700px;
+        .hero-content{
+            max-width:800px;
         }
 
-        h1{
-            font-size:48px;
-            margin-bottom:15px;
+        .hero h2{
+            font-size:60px;
+            margin-bottom:20px;
         }
 
-        p{
-            font-size:18px;
+        .hero p{
+            font-size:22px;
             color:#cbd5e1;
-            line-height:1.6;
+            margin-bottom:30px;
         }
 
         .btn{
             display:inline-block;
-            margin-top:25px;
-            padding:14px 28px;
+            padding:15px 35px;
             background:#38bdf8;
             color:white;
             text-decoration:none;
             border-radius:10px;
-            transition:0.3s;
             font-weight:bold;
+            transition:0.3s;
         }
 
         .btn:hover{
@@ -60,29 +106,135 @@
             transform:scale(1.05);
         }
 
-        footer{
+        section{
+            max-width:1200px;
+            margin:auto;
+            padding:80px 20px;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
             margin-top:40px;
-            font-size:14px;
+        }
+
+        .card{
+            background:#0f172a;
+            padding:25px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        .card h3{
+            margin-bottom:15px;
+            color:#38bdf8;
+        }
+
+        footer{
+            background:#08153d;
+            text-align:center;
+            padding:30px;
             color:#94a3b8;
+            margin-top:50px;
+        }
+
+        @media(max-width:768px){
+            .hero h2{
+                font-size:42px;
+            }
+
+            .hero p{
+                font-size:18px;
+            }
+
+            nav{
+                flex-direction:column;
+                gap:15px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Selamat Datang</h1>
+<header>
+    <nav>
+        <h1>Addilalayeye</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Tutorial</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h2>Selamat Datang</h2>
 
         <p>
-            Website GitHub Pages sederhana yang sudah terpasang
-            verifikasi Google Adsense.
+            Website yang membahas teknologi, tutorial,
+            berita internet, game, dan informasi menarik lainnya.
         </p>
 
-        <a href="#" class="btn">Mulai Jelajah</a>
-
-        <footer>
-            © 2026 Website Saya
-        </footer>
+        <a href="#" class="btn">Mulai Membaca</a>
     </div>
+</section>
+
+<section>
+    <h2>Artikel Terbaru</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Tips Website Cepat Terindex Google</h3>
+
+            <p>
+                Pelajari cara membuat website GitHub Pages
+                lebih cepat muncul di pencarian Google.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Cara Daftar Google Adsense</h3>
+
+            <p>
+                Panduan lengkap memasang iklan Adsense
+                pada website gratis maupun domain custom.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Teknologi AI Terbaru 2026</h3>
+
+            <p>
+                AI semakin berkembang pesat dan mulai
+                digunakan di berbagai bidang digital.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Tentang Website</h2>
+
+    <p style="margin-top:20px;color:#cbd5e1;">
+        Addilalayeye adalah website sederhana yang dibuat menggunakan
+        GitHub Pages untuk berbagi informasi teknologi, tutorial,
+        dan berbagai topik digital lainnya.
+    </p>
+</section>
+
+<footer>
+    © 2026 Addilalayeye - All Rights Reserved
+</footer>
 
 </body>
 </html>
