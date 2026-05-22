@@ -3,60 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- ==================== VERIFIKASI ADSENSE ==================== -->
-    <!-- GANTI BARIS INI DENGAN KODE DARI ADSENSE -->
+
+    <!-- Google Adsense Verification -->
     <meta name="google-adsense-account" content="ca-pub-5963666797707136">
-    
-    <!-- Script AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5963666797707136"
-         crossorigin="anonymous"></script>
-    
-    <title>TechNova - Berita Teknologi Terkini</title>
-    
+
+    <title>Website Saya</title>
+
     <style>
-        body { font-family: 'Segoe UI', sans-serif; background: #0f0f0f; color: #e0e0e0; margin: 0; padding: 0; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        header { background: #1a1a2e; padding: 20px; text-align: center; }
-        .logo { font-size: 2.5rem; color: #00ffcc; }
-        .hero { text-align: center; padding: 80px 20px; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/random/1600x900/?technology'); background-size: cover; color: white; }
-        .ads { margin: 30px 0; text-align: center; }
-        .card { background: #16213e; padding: 20px; border-radius: 10px; margin: 15px 0; }
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#0f172a;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .container{
+            max-width:700px;
+        }
+
+        h1{
+            font-size:48px;
+            margin-bottom:15px;
+        }
+
+        p{
+            font-size:18px;
+            color:#cbd5e1;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:25px;
+            padding:14px 28px;
+            background:#38bdf8;
+            color:white;
+            text-decoration:none;
+            border-radius:10px;
+            transition:0.3s;
+            font-weight:bold;
+        }
+
+        .btn:hover{
+            background:#0ea5e9;
+            transform:scale(1.05);
+        }
+
+        footer{
+            margin-top:40px;
+            font-size:14px;
+            color:#94a3b8;
+        }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <div class="logo">TechNova</div>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h1>Selamat Datang di TechNova</h1>
-            <p>Berita Teknologi • Gadget • AI • Inovasi Terbaru</p>
-        </div>
-    </section>
-
     <div class="container">
+        <h1>Selamat Datang</h1>
 
-        <!-- Iklan -->
-        <div class="ads">
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-5963666797707136"
-                 data-ad-slot="MASUKKAN_AD_SLOT_ID"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-        </div>
+        <p>
+            Website GitHub Pages sederhana yang sudah terpasang
+            verifikasi Google Adsense.
+        </p>
 
-        <h2 style="color:#00ffcc;">📰 Artikel Terbaru</h2>
-        <div class="card">
-            <h3>Perkembangan AI di 2026</h3>
-            <p>Grok 4 vs GPT-5, siapa yang memimpin perlombaan AI?</p>
-        </div>
+        <a href="#" class="btn">Mulai Jelajah</a>
+
+        <footer>
+            © 2026 Website Saya
+        </footer>
     </div>
 
 </body>
